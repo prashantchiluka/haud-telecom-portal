@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "7e0afd0d-67c4-436e-aa3a-b80db118147a",
+		"name": "ms-haud-telecom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"matthew\",\n\t\"email\":\"matthew.s@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/haud/telecom/customer/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"haud",
+						"telecom",
+						"customer",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/haud/telecom/customer/retrieveCustomer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"haud",
+						"telecom",
+						"customer",
+						"retrieveCustomer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Simcard",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sIMNumber\":515,\n\t\"iMSINumber\":21\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/haud/telecom/simcard/create/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"haud",
+						"telecom",
+						"simcard",
+						"create",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retreive Customer Sims",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/haud/telecom/simcard/retreiveCustomerSims/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"haud",
+						"telecom",
+						"simcard",
+						"retreiveCustomerSims",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
